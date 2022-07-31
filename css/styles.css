@@ -383,7 +383,7 @@ transition: opacity 250ms var(--primary-cubic);
     padding-bottom: 200px;
 
         height: 600px;
-        /* max-width: 1600px;  */
+        max-width: 1600px; 
         margin-right: auto;
         margin-left: auto;
 
@@ -750,7 +750,7 @@ text-transform: uppercase;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--primary-white-color); 
-    transition: color 250ms var(--primary-cubic);
+    transition: background-color 250ms var(--primary-cubic);
     
 }
 
@@ -851,6 +851,8 @@ text-transform: uppercase;
 
  .portfolio-card-link {
     display: block;
+    transform: translateY(0);
+    transition: transform 250ms var(--primary-cubic);
  
 
  }
@@ -883,7 +885,7 @@ text-transform: uppercase;
     /* opacity: 0; */
 }
 
-.card-overlay::before {
+/* .card-overlay::before {
     position: absolute; 
    
     content: '';
@@ -901,7 +903,7 @@ text-transform: uppercase;
     transition: transform 250ms var(--primary-cubic);
 
     
-}
+} */
 
 .card-overlay:hover::before,
 .card-overlay:focus::before {
